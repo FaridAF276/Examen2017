@@ -17,13 +17,14 @@ public class Application {
 
         }
         if(gateau != null) {
-            garnir(gateau);
+            gateau = garnir(gateau);
+            gateau.toString();
         }
     }
-    public static void garnir (Cupcake gato) {
+    public static Cupcake garnir (Cupcake gato) {
         Scanner userInput = new Scanner(System.in);
         String choix = "";
-        int select=4;
+        int select=3;
         do {
             System.out.println("Quel type de garniture désirez-vous : \n");
             System.out.println("0- Chocolat");
@@ -48,11 +49,11 @@ public class Application {
                     System.out.println("Erreur aucun choix n'a été effectué recommencez svp");
                     break;
                 default:
+                    System.out.println("Veuillez effectuer un choix valide s'il vous plait");
                     break    ;
             }
         } while (select!=2);
 
-
+    return gato;
     }
-
 }

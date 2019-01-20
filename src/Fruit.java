@@ -17,6 +17,7 @@ public class Fruit extends Supplement{
 
     @Override
     public String toString() {
-        return super.toString()+getDescription()+", le prix est de "+getCost();
+        String statement = super.toString() + getDescription() + ", le prix est de "+ String.valueOf(getCost());
+        return statement;
     }
 }
