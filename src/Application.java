@@ -38,9 +38,13 @@ public class Application {
             switch (select){
                 case 0:
                     gato = new Chocolat(gato);
+                    System.out.println(gato.getDescription());
+                    System.out.println(String.valueOf(gato.getCost()));
                     break;
                 case 1:
                     gato = new Fruit(gato);
+                    System.out.println(gato.getDescription());
+                    System.out.println(String.valueOf(gato.getCost()));
                     break;
                 case 2:
                     gato.toString();
