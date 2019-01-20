@@ -17,4 +17,8 @@ public class CupcakeChoco implements Cupcake {
     public double getCost() {
         return prix;
     }
+    @Override
+    public String toString() {
+        return getDescription();
+    }
 }

@@ -18,4 +18,8 @@ public class CupcakeVanille implements Cupcake {
             return prix;
         }
 
+        @Override
+        public String toString() {
+            return getDescription();
+        }
 }

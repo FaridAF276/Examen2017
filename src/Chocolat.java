@@ -15,6 +15,6 @@ public class Chocolat extends Supplement {
     }
     @Override
     public String toString() {
-        return super.toString()+ getDescription() + ", le prix est de "+ String.valueOf(getCost());
+        return super.toString()+ this.getDescription() + ", le prix est de "+ String.valueOf(this.getCost());
     }
 }

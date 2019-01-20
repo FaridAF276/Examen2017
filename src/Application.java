@@ -17,11 +17,10 @@ public class Application {
 
         }
         if(gateau != null) {
-            gateau = garnir(gateau);
-            gateau.toString();
+            garnir(gateau);
         }
     }
-    public static Cupcake garnir (Cupcake gato) {
+    public static void garnir (Cupcake gato) {
         Scanner userInput = new Scanner(System.in);
         String choix = "";
         int select=3;
@@ -58,6 +57,5 @@ public class Application {
             }
         } while (select!=2);
 
-    return gato;
     }
 }

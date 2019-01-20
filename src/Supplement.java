@@ -17,6 +17,6 @@ abstract class Supplement implements Cupcake {
 
     @Override
     public String toString() {
-        return "";
+        return getDescription();
     }
 }
