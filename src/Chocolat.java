@@ -6,11 +6,15 @@ public class Chocolat extends Supplement {
     }
     @Override
     public String getDescription() {
-        return super.getDescription() + " chocolat";
+        return super.getDescription() + ", chocolat";
     }
 
     @Override
     public double getCost() {
         return super.getCost() + 2.50;
+    }
+    @Override
+    public String toString() {
+        return super.toString()+getDescription()+", le prix est de "+getCost();
     }
 }

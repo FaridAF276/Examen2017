@@ -14,4 +14,9 @@ abstract class Supplement implements Cupcake {
     public double getCost() {
         return tempCupcake.getCost();
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

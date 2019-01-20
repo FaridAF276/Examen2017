@@ -1,11 +1,19 @@
 public class Factory {
 
 
+    public Cupcake commanderCupcake(int choix) {
 
-    vraiCupcake choco = new vraiCupcake("ingrédients  pâte au chocolat", 3.00);
-    vraiCupcake vanille = new vraiCupcake("ingrédients  pâte sucre vanille et extrait de vanille", 3.50);
+        switch (choix) {
+            case 1:
+                CupcakeChoco cupchoco = new CupcakeChoco();
+                return cupchoco;
 
-    public static void main(String[] args) {
-        Cupcake cupcakechoco = new Fruit(new vraiCupcake("ingrédients  pâte au chocolat", 3.00));
+            case 2:
+                CupcakeVanille cupvanille = new CupcakeVanille();
+                return cupvanille;
+
+            default:
+                return null;
+        }
     }
 }

@@ -14,4 +14,9 @@ public class Fruit extends Supplement{
     public double getCost() {
         return super.getCost() + 2.00;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+getDescription()+", le prix est de "+getCost();
+    }
 }
