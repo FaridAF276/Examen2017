@@ -9,17 +9,17 @@ public class CupcakeVanille implements Cupcake {
         }
 
         @Override
-        public String getDescription() {
-            return description;
+        public void addDescription(String ingredient) {
+            this.description+=ingredient;
         }
 
         @Override
-        public double getCost() {
-            return prix;
+        public void addCost(double cost) {
+            this.prix+=cost;
         }
 
         @Override
         public String toString() {
-            return getDescription();
+            return this.description + "\n et coûte : "+this.prix;
         }
 }

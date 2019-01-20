@@ -1,4 +1,4 @@
-abstract class Supplement implements Cupcake {
+public abstract class Supplement implements Cupcake {
     protected Cupcake tempCupcake;
 
     public Supplement(Cupcake tempCupcake) {
@@ -6,17 +6,17 @@ abstract class Supplement implements Cupcake {
     }
 
     @Override
-    public String getDescription() {
-        return tempCupcake.getDescription();
+    public void addDescription(String ingredient) {
+        tempCupcake.addDescription(ingredient);
     }
 
     @Override
-    public double getCost() {
-        return tempCupcake.getCost();
+    public void addCost(double cost) {
+        tempCupcake.addCost(cost);
     }
 
     @Override
     public String toString() {
-        return getDescription();
+        return tempCupcake.toString();
     }
 }

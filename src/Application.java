@@ -37,16 +37,15 @@ public class Application {
             switch (select){
                 case 0:
                     gato = new Chocolat(gato);
-                    System.out.println(gato.getDescription());
-                    System.out.println(String.valueOf(gato.getCost()));
+//                    System.out.println(gato.addDescription());
+//                    System.out.println(String.valueOf(gato.addCost()));
                     break;
                 case 1:
                     gato = new Fruit(gato);
-                    System.out.println(gato.getDescription());
-                    System.out.println(String.valueOf(gato.getCost()));
+//                    System.out.println(gato.addDescription());
+//                    System.out.println(String.valueOf(gato.addCost()));
                     break;
                 case 2:
-                    gato.toString();
                     break;
                 case 3:
                     System.out.println("Erreur aucun choix n'a été effectué recommencez svp");
@@ -56,6 +55,7 @@ public class Application {
                     break    ;
             }
         } while (select!=2);
+        System.out.println(gato.toString());
 
     }
 }
